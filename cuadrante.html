@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nombre de la página</title>
+    <!-- Agregar enlaces a las bibliotecas de JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Logo de texto</h1>
+    </header>
+    <section>
+      <h2>Sección 1</h2>
+      <p>Descripción de la sección 1.</p>
+    </section>
+    <section>
+      <h2>Sección 2</h2>
+      <p>Descripción de la sección 2.</p>
+    </section>
+    <section>
+      <h2>Sección 3</h2>
+      <p>Descripción de la sección 3.</p>
+    </section>
+    <section>
+      <h2>Video</h2>
+      <!-- Agregar el video -->
+      <video src="nombre-del-video.mp4" controls></video>
+    </section>
+    <section>
+      <h2>Carrusel de imágenes</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://github.com/tino2022A/shoppin-online/blob/main/s-l400%20(2).jpg" alt="Maose recargable" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/tino2022A/shoppin-online/blob/main/s-l400.jpg" alt="Mause recrgable" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/tino2022A/shoppin-online/blob/main/s-l1600%20(6).jpg" alt="Laptos dell " />
+          </div>
+        </div>
+        <!-- Agregar botones de navegación -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Agregar barra de progreso -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Agregar scripts de las bibliotecas de JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Inicializar el carrusel de imágenes
+      var swiper = new Swiper(".swiper-container", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
+  </body>
+</html>
